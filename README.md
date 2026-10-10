@@ -140,6 +140,3 @@ Do not report performance figures unless they have been measured and documented.
 
 B.Tech — Artificial Intelligence & Data Science
 
-## 📄 License
-
-Add a license after deciding how you want others to use, modify, and distribute this project.
