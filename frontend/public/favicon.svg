@@ -1,4 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-  <path d="m9 12 2 2 4-4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Deep Navy Blue -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1528"/>
+      <stop offset="50%" stop-color="#060d1b"/>
+      <stop offset="100%" stop-color="#03060d"/>
+    </linearGradient>
+
+    <!-- Squircle Border Gradient -->
+    <linearGradient id="squircleBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- Shield Border Gradient: Electric Cyan to Bright Blue -->
+    <linearGradient id="shieldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="45%" stop-color="#00d0ff"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <!-- Shield Inner Fill: Deep Cyber Blue -->
+    <linearGradient id="shieldFill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#0c2242" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#040b17" stop-opacity="0.96"/>
+    </linearGradient>
+
+    <!-- Stylized D Gradient: Electric Cyan -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5f3fc"/>
+      <stop offset="30%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Navy Squircle Base -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bgGrad)" stroke="url(#squircleBorder)" stroke-width="6"/>
+
+  <!-- Shield Outer Geometry -->
+  <path d="M 256 76 L 402 124 C 402 272 354 382 256 440 C 158 382 110 272 110 124 Z"
+        fill="url(#shieldFill)"
+        stroke="url(#shieldBorder)"
+        stroke-width="26"
+        stroke-linejoin="round"
+        stroke-linecap="round"/>
+
+  <!-- Inner Cyber Contour Accent -->
+  <path d="M 256 108 L 374 146 C 374 260 336 348 256 398 C 176 348 138 260 138 146 Z"
+        fill="none"
+        stroke="#00f2fe"
+        stroke-opacity="0.2"
+        stroke-width="5"
+        stroke-linejoin="round"/>
+
+  <!-- Stylized Cyber 'D' (DeepFakeShield) -->
+  <!-- Left Vertical Spine -->
+  <path d="M 198 168 L 198 344"
+        stroke="url(#cyanGrad)"
+        stroke-width="32"
+        stroke-linecap="round"/>
+
+  <!-- D Outer Loop / Circuit Arch -->
+  <path d="M 198 182 H 262 C 322 182 354 216 354 256 C 354 296 322 330 262 330 H 198"
+        fill="none"
+        stroke="url(#cyanGrad)"
+        stroke-width="30"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Central Circuit Core / AI Verification Sensor -->
+  <!-- Horizontal Data Trace -->
+  <line x1="198" y1="256" x2="258" y2="256" stroke="#00f2fe" stroke-width="16" stroke-linecap="round"/>
+  <!-- Central Pulse Node -->
+  <circle cx="270" cy="256" r="18" fill="#00f2fe"/>
+  <circle cx="270" cy="256" r="9" fill="#ffffff"/>
+
+  <!-- Circuit Trace Nodes -->
+  <circle cx="198" cy="168" r="14" fill="#ffffff"/>
+  <circle cx="198" cy="344" r="14" fill="#00d0ff"/>
+  <circle cx="354" cy="256" r="11" fill="#38bdf8"/>
 </svg>
